@@ -12,7 +12,7 @@ export default function SearchFood({ search, setSearch }) {
                 />
                 <Search className="absolute top-1/2 -translate-y-1/2 left-3 w-4 h-4 text-muted-foreground" />
             </div>
-            <ul className="flex gap-3">
+            <ul className="flex gap-3 flex-wrap">
                 <li className="border rounded-2xl px-3 py-1 font-medium text-sm hover:bg-accent cursor-pointer bg-accent">
                     All
                 </li>

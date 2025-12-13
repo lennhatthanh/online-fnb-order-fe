@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import LayoutUser from "./components/LayoutUser";
 import Menu from "./page/Menu";
 import Orders from "./page/Orders";
@@ -25,6 +25,7 @@ function App() {
                             </ProtectRoute>
                         }
                     >
+                        <Route index path="/" element={<Navigate to={"/login"} />} />
                         <Route path="menu" element={<Menu />} />
                         <Route path="orders" element={<Orders />} />
                         <Route path="cart" element={<Cart />} />
